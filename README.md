@@ -6,10 +6,11 @@ puppet agents to manage their runs.
 # Building
 
 Dependencies: Go 1.2+
-    $ export GOPATH="/path/to/buildir" ; mkdir -p $GOPATH
-    $ git clone https://github.com/johnj/pvc-server && cd pvc-server
-    $ go get ./..
-    $ go build github.com/johnj/pvc-server
+
+        $ export GOPATH="/path/to/buildir" ; mkdir -p $GOPATH
+        $ git clone https://github.com/johnj/pvc-server && cd pvc-server
+        $ go get ./..
+        $ go build github.com/johnj/pvc-server
 
 # Running
 ``
