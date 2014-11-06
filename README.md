@@ -4,12 +4,12 @@ A server for handling pvc agents running on puppetmasters to report their statis
 puppet agents to manage their runs.
 
 # Building
-``
-$ export GOPATH="/path/to/buildir" ; mkdir -p $GOPATH
-$ git clone https://github.com/johnj/pvc-server && cd pvc-server
-$ go get ./..
-$ go build github.com/johnj/pvc-server
-``
+
+Dependencies: Go 1.2+
+    $ export GOPATH="/path/to/buildir" ; mkdir -p $GOPATH
+    $ git clone https://github.com/johnj/pvc-server && cd pvc-server
+    $ go get ./..
+    $ go build github.com/johnj/pvc-server
 
 # Running
 ``
@@ -20,11 +20,9 @@ $ pvc-server
 `pvc-server` relies on PostgreSQL (any version), the schema is located in the `schema.sql`
 file.
 
-``
-$ createuser -U postgres pvc
-$ createdb -U pvc pvc
-$ psql -U pvc pvc < schema.sql
-``
+    $ createuser -U postgres pvc
+    $ createdb -U pvc pvc
+    $ psql -U pvc pvc < schema.sql
 
 # Configuration
 By default found @ /etc/pvc-server.conf, can be specified on the command line with `-f`.
