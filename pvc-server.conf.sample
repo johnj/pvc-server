@@ -1,0 +1,11 @@
+[postgresql]
+host = localhost
+user = pvc
+dbname = pvc
+
+[server]
+port = 8080
+puppetfqdn = puppet.dns.com
+reportprocessor = /var/lib/pvc/report.sh
+factsprocessor = /var/lib/pvc/facts.sh
+profile = 0
